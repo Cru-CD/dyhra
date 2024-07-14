@@ -33,8 +33,6 @@ impl Entity {
             health: health,
             uid: uid,
             state: FSM::new()
-                
-                
         }
     }
 
@@ -107,7 +105,6 @@ impl Entity {
         {
             let push = self.rect.center() - rect.center();
             let push = push.normalize();
-            
             self.rect.x += push.x;
             self.rect.y += push.y;
 
